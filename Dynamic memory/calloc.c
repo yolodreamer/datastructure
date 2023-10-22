@@ -16,7 +16,7 @@ int main()
      {
         printf("%d",*(i+p));
      }
-     free(p);
+     free(p);//还回所借用的内存
      p = NULL;
      return 0;
 }
