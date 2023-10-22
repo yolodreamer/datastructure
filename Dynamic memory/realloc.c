@@ -17,17 +17,17 @@ int main ()
         *(p+i)=i+1;
     }
 
-    int* ptr =realloc(p,9000);
+    int* ptr =realloc(p,9000);//拓展空间
 
-    if (ptr != NULL)
+    if (ptr != NULL)//realloc有两种，一个是在原本的空间上拓展，还有一种是原来空间不够把原来数据移到新的空间并且开辟新的足够大的空间
     {
         p=ptr;
     }
-    for(i=0;i<10;i++)
+    for(i=0;i<10;i++)//使用
     {
         printf("%d\n",*(p+i));
     }
-    free(p);
+    free(p);//借用内存归还
     p= NULL;
 
     return 0;
