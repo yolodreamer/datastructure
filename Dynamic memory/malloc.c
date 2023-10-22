@@ -1,10 +1,11 @@
+#include<stdio.h>
 #include<string.h>//strerror头文件
 #include<stdlib.h>//malloc头文件名称
 #include<errno.h>//erron头文件
 int main()
 {
-    int* p = (int*)malloc(40);//动态内存的开辟
-    if (*p == NULL)//内存开辟失败
+    int* p = (int*)malloc(40);//动态内存的开辟9
+    if (p == NULL)//内存开辟失败
     {
         printf("%s\n", strerror(errno));
         return 1;
@@ -19,4 +20,5 @@ int main()
         printf("%d/n", *(p + i));
     }
     return 0;
+
 }
