@@ -4,8 +4,8 @@
 #include<errno.h>//erron头文件
 int main()
 {
-    int* p = (int*)malloc(40);//动态内存的开辟9
-    if (p == NULL)//内存开辟失败
+    int* p = (int*)malloc(40);//动态内存的开辟
+    if (p == NULL)//内存开辟失败，检查一点要有
     {
         printf("%s\n", strerror(errno));
         return 1;

@@ -6,7 +6,7 @@
 int main()
 {
     int *p=(int*)calloc(10,sizeof(int));
-    if (p == NULL)
+    if (p == NULL)//检查一定要有
     {
         printf("%s\n",strerror(errno));
         return 1;

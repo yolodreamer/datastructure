@@ -5,8 +5,7 @@
 int main ()
 {
     int *p=(int*)malloc(40);
-    if(p== NULL)
-    {
+    if(p== NULL)//检查一定要有
     printf("%s\n",strerror(errno));
     return 1;
     }
